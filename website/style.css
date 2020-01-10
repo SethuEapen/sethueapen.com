@@ -1,0 +1,89 @@
+body
+{
+    background-color: rgb(70, 60, 60)!important;
+}
+
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-nav li
+{
+    padding: 0 10px
+}
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+}
+#nav-bar ul li a:hover
+{
+    /* changes color of text when hovering over */
+    color: #077bff!important;
+}
+.navbar
+{
+    background: rgb(118, 111, 196)!important;
+}
+.navbar-toggler
+{
+    border: none!important;
+}
+.navbar-brand
+{
+    color: rgb(206, 206, 206)!important;
+    font-weight: 900;
+    
+}
+.nav-link
+{
+    color: rgb(58, 54, 54)!important;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+/* Jumbotron Section */
+
+.jumbotron
+{
+    color: rgb(206, 206, 206)!important;
+    text-align: center;
+    background-image: url("IMG1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 540px;
+}
+
+.jumbotron h1
+{
+    margin-top: 50px;
+    margin-bottom: 90px;
+    font-weight: 600;
+}
+
+.jumbotron p
+{
+    font-weight: 500;
+}
+
+/* About Section */
+
+#about
+{
+    padding-top: 50px;
+    padding-bottom:50px;
+    color: rgb(206, 206, 206)!important;
+
+}
+
+.about-content
+{
+    padding-top: 20px;
+}
+
+.responsive
+{
+    max-width: 100%;
+}
