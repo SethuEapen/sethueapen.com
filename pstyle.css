@@ -49,6 +49,19 @@
 .responsive
 {
     max-width: 100%;
+
+}
+
+.col-md-6
+{
+    position: relative;
+}
+
+.centered
+{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
 }
 
 .wback-link
