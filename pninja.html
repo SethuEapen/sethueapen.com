@@ -39,5 +39,59 @@
 	  </div>
 	</nav>
 </section>
+<section id="main">
+<div class="container">
+	<h1>Privacy Ninja</h1>
+	<img src="IMG5.jpg" class="responsive">
+		
+	<p>PrivacyNinja is a program that provides safety and privacy from your parents, boss, or anyone else who you do not want walking in on you. PrivacyNinja uses network sockets to communicate with a raspberry pi wirelessly. When motion is detected by the RPi you can chose whether to close a program (i.e. browser, game), close a tab or window via the commands ctrl + w and ctrl + shift + w respectively, or send an alert email to your phone. the program can be completely hidden and exposed using the command ctrl + alt + w.</p>
+	<p>
+		Please watch the <a class="vid-link" href="https://youtu.be/lNjg_OmPB9c">video</a> before using PrivacyNinja
+	</p>
+	<div class="gstarted">
+		<h2>Getting Started</h2>
+		<div class="ssetup">
+			<h4>Server Setup</h4>
+			<p>You can download the exe and PrivacyNinja will work properly, however using the email function will be quite difficult since the email credentials will need to be entered every time the program is run. To avoid this, you need to edit the PrivacyNinja.py file</p>
+			<p>First you need to enter your email credentials inside the email, password, and send_to_email strings in the 'Email variables' section:</p>
+			<pre style="color: #FFFFFF">
+				<code>
+import socket
+import os
+
+#Email variables
+email = ''#PUT YOUR EMAIL DEFAULTS HERE
+password = ''
+send_to_email = ''
+subject = 'ALERT'
+message = 'Motion Detected At Pi'
+msg = MIMEMultipart()
+msg['From'] = email
+msg['To'] = send_to_email
+msg['Subject'] = subject
+msg.attach(MIMEText(message, 'plain'))</code>
+			</pre>
+			<p>You should also put the same credentials as defaults for the entry boxes in the GUI:</p>
+			<pre style="color: #FFFFFF">
+				<code>
+logintxt = StringVar()
+login = Entry(self.root, textvariable=logintxt, bg='light gray')
+logintxt.set('SENDING EMAIL')#PUT YOUR DEFAULT EMAIL HERE
+login.grid(row=5, column=0)
+			
+passtxt = StringVar()
+password = Entry(self.root, textvariable=passtxt, bg='light gray', show='*')
+passtxt.set('SENDING PASSWORD')#PUT DEFAULT EMAIL'S PASSWORD HERE
+password.grid(row=5, column=1)
+			
+sendtotxt = StringVar()
+sendto = Entry(self.root, textvariable=sendtotxt, bg='light gray')
+sendtotxt.set('RECEIVING EMAIL')#PUT DEFAULT RECEIVING EMAIL HERE
+sendto.grid(row=6, column=0)</code>
+			</pre>
+		</div>
+	</div>
+</div>
+</section>
 </body>
 </html>
