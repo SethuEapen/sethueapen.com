@@ -1,6 +1,8 @@
 #main
 {
     color: azure;
+    margin-top: 20px;
+
 }
 h1
 {
@@ -33,10 +35,4 @@ pre
 .pstartup
 {
     margin-top: 40px;
-}
-hr 
-{ 
-    width:100%; 
-    height:1px;
-    background: #fff 
 }
