@@ -2,12 +2,12 @@
 
 .jumbotron
 {
-    color: rgb(206, 206, 206)!important;
+    color: white!important;
     text-align: center;
-    background-image: url("IMG1.jpg");
+    background-image: url("IMAGE1.jpg");
     background-position: center;
     background-size: cover;
-    height: 540px;
+    height: 650px;
 }
 
 .jumbotron h1
