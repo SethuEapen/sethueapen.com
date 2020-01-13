@@ -47,7 +47,8 @@ hr
 { 
     width:100%; 
     height:1px;
-    background: #fff 
+    background: #fff; 
 }
-
-
+a {
+    color: rgb(224, 205, 33)!important;
+}
