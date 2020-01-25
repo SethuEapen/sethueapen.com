@@ -13,67 +13,54 @@
 </head>
 <body>
 <section id="nav-bar">
-	<nav class="navbar navbar-expand-lg navbar-light">
-	  <a class="navbar-brand" href="#">Sethu Eapen</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav ml-auto">
-	      <li class="nav-item">
-	        <a class="nav-link" href="index.html">HOME</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="index.html#about">ABOUT ME</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="projects.html">PROJECTS & VIDEOS</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link " href="#">DOWLOADS</a>
-		  </li>
-		  <li class="nav-item">
-	        <a class="nav-link " href="#">PATTENTS</a>
-	      </li>
-	    </ul>
-	  </div>
-	</nav>
+		<nav class="navbar navbar-expand-lg navbar-light">
+		  <a class="navbar-brand" href="index.html"><img src="Logo.png"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item">
+				<a class="nav-link" href="index.html">HOME</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="index.html#about">ABOUT ME</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="projects.html">PROJECTS & VIDEOS</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link " href="downloads.html">DOWLOADS</a>
+			  </li>
+			</ul>
+		  </div>
+		</nav>
 </section>
+<section id="main"> 
 <div class="projects">
-    <section id="pninja"> 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                  <div class="centered">
-                    <img src="IMG3.png" class="responsive">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                    <a class="pninja-link" href="pninja.html">PRIVACY NINJA</a>
-                    <div class="pninja-content">
-                        This program allows you to use a raspberry pi with a motion sensor to close all incogitio tabs on you computer when motion is detected. If used with a battery bank this can be done compleatly wirelessly. You can decide the usecases youselfs.
-                    </div>
-                </div>
-            </div>
+  <div class="row">
+    <div class="column">
+      <div class="card" style="width: 18rem;">
+        <img src="IMG6.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Privacy Ninja</h5>
+          <p class="card-text">This program allows you to use a raspberry pi with a motion sensor to close all incogitio tabs on you computer when motion is detected. If used with a battery bank this can be done compleatly wirelessly. You can decide the usecases youselfs.</p>
+          <a href="pninja.html" class="btn btn-primary">See more</a>
         </div>
-    </section>
-    <section id="wback">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="centered">
-                      <img src="IMG4.png" class="responsive">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <a class="wback-link" href="wback.html">WEATHER BACKGROUND</a>
-                    <div class="wback-content">
-                        This program automaticaly changes your desktop background based on weather condions and the time of day in your local area. This uses the open weather api in python. The filters for weather are automaticly applied so only 4 images are needed, one for each time of day
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card" style="width: 18rem;">
+        <img src="IMG7.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Weather Background</h5>
+          <p class="card-text">This program allows you to use a raspberry pi with a motion sensor to close all incogitio tabs on you computer when motion is detected. If used with a battery bank this can be done compleatly wirelessly. You can decide the usecases youselfs.</p>
+          <a href="wback.html" class="btn btn-primary">See more</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
 </div>
+</section>
 </body>
 </html>

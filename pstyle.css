@@ -1,72 +1,10 @@
-/* Jumbotron Section */
-
-/* Projects section */
-
-
-
-/* Privacy Ninja Section */
-
-#pninja
-{
-    padding-top: 20px;
-    padding-bottom:20px;
-    color: rgb(206, 206, 206)!important;
-
-}
-
-.pninja-content
-{
-    padding-top: 10px;
-}
-
-.responsive
-{
-    max-width: 100%;
-}
-
-.pninja-link
-{
-    color: rgb(206, 206, 206)!important;
-    font-weight: 900;
-    font-size: 24px;
-}
-
-/* Weather Background Section */
-
-#wback
-{
-    padding-top: 20px;
-    padding-bottom:20px;
-    color: rgb(206, 206, 206)!important;
-
-}
-
-.wback-content
-{
-    padding-top: 10px;
-}
-
-.responsive
-{
-    max-width: 100%;
-
-}
-
-.col-md-6
-{
-    position: relative;
-}
-
-.centered
+.projects
 {
     position: absolute;
-    top:50%;
-    transform: translateY(-50%);
 }
-
-.wback-link
+.card
 {
-    color: rgb(206, 206, 206)!important;
-    font-weight: 900;
-    font-size: 24px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 0px;
 }

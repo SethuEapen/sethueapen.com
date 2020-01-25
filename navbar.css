@@ -9,6 +9,11 @@ body
     top: 0;
     z-index: 10;
 }
+.navbar-brand img
+{
+    height: 20px;
+    padding-left: 10px;
+}
 .navbar-nav li
 {
     padding: 0 10px
@@ -51,4 +56,15 @@ hr
 }
 a {
     color: rgb(224, 205, 33)!important;
+}
+
+.btn-primary
+{
+    background-color: rgb(118, 111, 196)!important;
+    border-color: rgb(118, 111, 196)!important;
+}
+.btn-primary:hover
+{
+    background-color: rgb(102, 96, 168)!important;
+    border-color: rgb(102, 96, 168)!important;
 }
