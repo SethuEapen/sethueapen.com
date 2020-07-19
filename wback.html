@@ -39,7 +39,7 @@
 <section id="main">
 	<div class="container">
 		<div class="heading">
-			<h1>Weather Background (work in progress)</h1>
+			<h1>Weather Background</h1>
 			<a class="btn btn-primary btn-lg" href="downloads.html#weatherBack" role="button">Download</a>
 		</div>
 	<hr/>
@@ -49,15 +49,18 @@
 	<div class="jumbotron jumbotron-fluid">
 	</div>
 </section>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BhnoYYi675o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <section id="main">
 <div class="container">
-	<p>Weather Background is a program that automaticaly changes your desktop background based on the weather conditions outside and the time of day (morning, day, evening, and night). Programs like this exist already; however, they are not open source, have limited coustomizability, and need an image for each weather conditon at every time of day. This limits the images you can use because they must be made specificaly for this application. Weather Background only requires four pictures for each time of day; the weather conditons are applied programaticaly.</p>
+	<p>Weather Background is a program that automatically changes your desktop background based on the weather conditions outside and the time of day (morning, day, evening, and night). Programs like this exist already; however, they are not open source, have limited customizability, and need an image for each weather condition at every time of day. This limits the images you can use because they must be made specifically for this application. Weather Background only requires four pictures for each time of day; the weather conditions are applied programmatically.
+	</p>
 	<div class="section">
 		<h2>Standard Install</h2>
 		<hr/>
 		<div class="subsection">
-			<h4>Defaults</h4>
-			<p>After downloading the installer exe file, double click on the file and run the installer. This installer should put the nessacary files in your program files folder along with the setup tool and image folder on your desktop. You will need to get an api key in order to access weather data. Sign up at <a href="https://home.openweathermap.org/users/sign_up">open weather API</a> for a free accrount and API key. Next find 4 images you want to use for your desktop background on the internet, one for morning, day, evening, and night. Store these files inside the backgrounds folder on your desktop. Next, run the setup tool that is located on your desktop. Here you can copy and paste your API key, enter the path for the backgrounds folder(which you can relocate prior to this step), your city, and the font size of the HUD in the top right hand corner. You can press the test button to ensure that it works or press set.</p>
+			<p>After downloading and extracting the zip file in the Program Files folder. You will need to get an API key in order to access weather data. Sign up at <a href="https://home.openweathermap.org/users/sign_up">open weather API</a> for a free account and API key. Next find 4 images you want to use for your desktop background on the internet, one for morning, day, evening, and night. Store these files inside a folder on your desktop and name them morning, day, evening, and night. If you do not have python, install it along with pip. You must have the following dependencies: pillow, requests. Next, run the included setup tool. Here you can paste your API key, enter the path for your backgrounds folder, your zip code, and the font size of the HUD in the top right corner. You can press the test button to ensure that it works or press set. To make the background update every 5 minutes go to the windows task scheduler and create a new task. On triggers create new and click one time set the start to 12:00 A.M of the previous day. Then under advanced settings check repeat tasks and set it to repeat every 5 minutes for a duration of indefinitely. Under actions create new; under “Program/script” put the path of your “pythonw.exe” program. If you followed a default python installation you will most likely find it here: “C:\Users\<USER>\AppData\Local\Programs\Python\Python37-32\pythonw.exe”. Under add arguments paste the path of the Weather2Final.pyw file in Program Files: "C:\Program Files\Weather Background Changer\Weather2Final.pyw". After that is set you should be good. For ease of use, you can create a desktop shortcut for the setup program.</p>
+			<img src="Triggers.JPG" class="responsive">
+			<img src="Actions.JPG" class="responsive">
 		</div>
 	</div>
 </div>
