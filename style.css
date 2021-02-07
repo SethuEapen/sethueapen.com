@@ -4,23 +4,23 @@
 {
     color: white!important;
     text-align: center;
-    background-image: url("IMAGE1.jpg");
+    background-image: url("IMAGE1.png");
     background-position: center;
     background-size: cover;
-    height: 650px;
+    height: 1000px;
 }
 
 .jumbotron h1
 {
-    margin-top: 50px;
-    margin-bottom: 90px;
-    font-weight: 600;
+    margin-top:30%;
+    font-weight: 200;
 }
 
 .jumbotron p
 {
     font-weight: 500;
 }
+
 
 /* About Section */
 
